@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Permanent+Marker&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.back {
+    height: 100vh;
+    width: 100vw;
+    background: url('images/Lobster.webp') no-repeat center center/
+    cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.back * {
+    z-index: 10;
+}
+
+.main {
+    height: 98%;
+    width: 75%;
+    
+    
+    border: 4px solid #85586F;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.main:before {
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #DEB6AB;
+    opacity: 0.7;
+}
+
+.logo-section {
+    height: 8%;
+    width: 100%;
+    background-color: #F8ECD1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    color: red;
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+}
+.menu-container{
+    height: 6%;
+    width: 100%;
+    background-color: #FFD9C0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.menu-container a{
+    font-family: 'Martian Mono', monospace;
+    font-size: 18px;
+    color: #D61355;
+    transition: all .4s  ease-in-out;
+    position: relative;
+}
+
+.menu-container a:last-child:before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -75%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #9f6a85;
+}
+
+.menu-container a:first-child:after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -300%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #9f6a85;
+}
+
+.menu-container a:hover {
+    cursor: pointer;
+    color: white;
+    
+}
+
+
+
+.content-container {
+    width: 80%;
+    height: 90%;
+    position: relative;
+ }
+/*footer*/
+
+.footer {
+    width: 100%;
+    height: 6%;
+    background-color: #FFD9C0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer i{
+    font-size: 30px;
+    margin: auto 20px auto;
+    color: #D61355;
+}
+
+
+.footer i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* home content*/
+
+.home-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.home-container  h2 {
+    color: white;
+    font-family: 'Martian Mono', monospace;
+    margin-top: 40px;
+    line-height: 1.8;
+}
+
+.rest-pic {
+    background: url('images/rest-pic.jpeg') no-repeat center center/
+    cover;
+    width: 50%;
+    height: 50%;
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 4px solid #85586F;
+    transition: all .3s ease-in;
+}
+
+.rest-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 6px 6px #85586F;
+}
+
+/*menu content*/
+
+.menuPage-container {
+    width: 100%;
+    height: 93%;
+    border: 4px solid #85586F;
+    border-radius: 5px;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+   
+
+}
+
+.item-container {
+    width: 85%;
+    height: 200px;
+    border-bottom: 4px solid #85586F ;
+    margin: 0 auto 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img {
+    width: 30%;
+    height: 80%;
+    margin-right: 30px;
+    border-radius: 15px;
+    transition: all .5s ease-in;
+}
+
+.img:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 0px 5px 5px rgb(214, 214, 214, 0.7);
+}
+
+.img1 {
+    background: url('images/lobsRoll.jpeg')no-repeat center center/
+    cover;
+  }
+
+.img2 {
+    background: url('images/oister.jpeg')no-repeat center center/
+    cover;
+  }
+
+
+.img3 {
+    background: url('images/salmon.jpeg')no-repeat center center/
+    cover;
+  }
+
+
+.img4 {
+    background: url('images/best-cod.jpeg')no-repeat center center/
+    cover;
+  }
+
+.img5 {
+    background: url('images/clamCh.jpeg')no-repeat center center/
+    cover;
+  }
+
+.text {
+    width: 60%;
+    height: 80%;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Martian Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.item-container:last-child {
+    margin-bottom: 20px;
+    border-bottom: none;
+}
+
+/*hours & location*/
+
+.hoursPage-container {
+    width: 100%;
+    height: 85%;
+    margin: 30px auto;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hoursPage-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFD9C0;
+    opacity: 0.75;
+    border-radius: 5px;
+}
+
+.hoursLoc {
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: 'Martian Mono', monospace;
+    font-weight: bold;
+    
+}
+
+
+.hoursRest {
+    
+    font-size: 18px;
+    font-family: 'Martian Mono', monospace;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #D61355;
+    
+}
+
+.week-days {
+    font-size: 22px;
+    font-family: 'Martian Mono', monospace;
+    text-align: center;
+    margin: 30px auto 0px;
+    font-weight: bold;
+}
+
+.week-hours {
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Martian Mono', monospace;
+    color: #D61355;
+}
